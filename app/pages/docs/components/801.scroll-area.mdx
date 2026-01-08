@@ -17,7 +17,7 @@ The Scroll Area component provides a customizable scrollable container with enha
 
 The Scroll Area component creates a scrollable container with custom scrollbar styling. It automatically handles overflow and provides smooth scrolling behavior.
 
-```vue title="[[_Source code_]]" preview
+```vue title="[[_Source code_]]" preview client_only
 <template>
   <IkScrollArea style="height: 300px; border: 1px solid var(--border-neutral-regular-default); border-radius: 4px;">
     <div style="padding: 16px;">
@@ -37,7 +37,7 @@ import { IkScrollArea } from '@ikol/ui-kit/components/IkScrollArea';
 
 Enable horizontal navigation arrows that appear when content can be scrolled horizontally. The arrows fade in and out based on scroll position.
 
-```vue title="[[_Source code_]]" preview
+```vue title="[[_Source code_]]" preview client_only
 <template>
   <IkScrollArea horizontal_arrows style="height: 250px; border: 1px solid var(--border-neutral-regular-default); border-radius: 4px;">
     <div style="padding: 16px; display: flex; gap: 24px;">
@@ -57,7 +57,7 @@ import { IkScrollArea } from '@ikol/ui-kit/components/IkScrollArea';
 
 Implement infinite scrolling by providing an `onIkLoadMore` callback and pagination state. The component automatically detects when the user scrolls near the bottom and triggers loading.
 
-```vue title="[[_Source code_]]" preview
+```vue title="[[_Source code_]]" preview client_only
 <template>
   <IkScrollArea
     :loading="loading"
@@ -112,7 +112,7 @@ function loadMore() {
 
 Enable reverse scrolling mode where new content is added at the top and the scroll position is automatically maintained. Useful for chat applications or reverse-ordered content.
 
-```vue title="[[_Source code_]]" preview
+```vue title="[[_Source code_]]" preview client_only
 <template>
   <div>
     <IkButton @click="addMessage" class="ik-mb-4">Add Message</IkButton>
