@@ -17,7 +17,7 @@ The Scroll Area component provides a customizable scrollable container with enha
 
 The Scroll Area component creates a scrollable container with custom scrollbar styling. It automatically handles overflow and provides smooth scrolling behavior.
 
-```vue title="[[_Source code_]]" preview client_only
+```vue title="[[_Source code_]]" preview
 <template>
   <IkScrollArea style="height: 300px; border: 1px solid var(--border-neutral-regular-default); border-radius: 4px;">
     <div style="padding: 16px;">
@@ -37,7 +37,7 @@ import { IkScrollArea } from '@ikol/ui-kit/components/IkScrollArea';
 
 Enable horizontal navigation arrows that appear when content can be scrolled horizontally. The arrows fade in and out based on scroll position.
 
-```vue title="[[_Source code_]]" preview client_only
+```vue title="[[_Source code_]]" preview
 <template>
   <IkScrollArea horizontal_arrows style="height: 250px; border: 1px solid var(--border-neutral-regular-default); border-radius: 4px;">
     <div style="padding: 16px; display: flex; gap: 24px;">
@@ -57,7 +57,7 @@ import { IkScrollArea } from '@ikol/ui-kit/components/IkScrollArea';
 
 Implement infinite scrolling by providing an `onIkLoadMore` callback and pagination state. The component automatically detects when the user scrolls near the bottom and triggers loading.
 
-```vue title="[[_Source code_]]" preview client_only
+```vue title="[[_Source code_]]" preview
 <template>
   <IkScrollArea
     :loading="loading"
@@ -112,7 +112,7 @@ function loadMore() {
 
 Enable reverse scrolling mode where new content is added at the top and the scroll position is automatically maintained. Useful for chat applications or reverse-ordered content.
 
-```vue title="[[_Source code_]]" preview client_only
+```vue title="[[_Source code_]]" preview
 <template>
   <div>
     <IkButton @click="addMessage" class="ik-mb-4">Add Message</IkButton>
@@ -121,7 +121,7 @@ Enable reverse scrolling mode where new content is added at the top and the scro
       style="height: 300px; border: 1px solid var(--border-neutral-regular-default); border-radius: 4px;"
     >
       <div style="padding: 16px;">
-        <div v-for="msg in messages.reverse()" :key="msg.id" style="padding: 8px; margin-bottom: 8px; background: var(--background-neutral-weak-default); border-radius: 4px;">
+        <div v-for="msg in messages" :key="msg.id" style="padding: 8px; margin-bottom: 8px; background: var(--background-neutral-weak-default); border-radius: 4px;">
           <strong>Message {{ msg.id }}:</strong> {{ msg.text }}
         </div>
       </div>
@@ -142,7 +142,7 @@ const messages = ref([
 let messageId = 4;
 
 function addMessage() {
-  messages.value.unshift({
+  messages.value.push({
     id: messageId++,
     text: `New message at ${new Date().toLocaleTimeString()}`
   });
