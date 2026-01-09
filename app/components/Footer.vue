@@ -3,7 +3,7 @@
         <div :class="$style.wrapper">
             <IkListItem class="ik-pa-0 ik-py-5">
                 <template #prepend>
-                    <IkImage src="/logo.svg"
+                    <IkImage src="/favicon.svg"
                              :size="32" />
                 </template>
                 <span class="ik-text--xl ik-text--bold">IK UI</span>

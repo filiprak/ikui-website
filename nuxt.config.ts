@@ -29,7 +29,7 @@ export default defineNuxtConfig({
                 { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
                 { rel: 'preconnect', href: 'https://cdnjs.cloudflare.com' },
                 { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-                { rel: 'icon', href: '/logo.svg', sizes: 'image/svg+xml' },
+                { rel: 'icon', href: '/favicon.svg', sizes: 'image/svg+xml' },
                 { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
                 { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap' },
                 { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' },

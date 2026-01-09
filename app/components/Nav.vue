@@ -7,7 +7,7 @@
                         no_hover
                         inline>
                 <template #prepend>
-                    <IkImage src="/logo.svg"
+                    <IkImage src="/favicon.svg"
                              :size="32" />
                 </template>
                 <span class="ik-text--xl ik-text--bold">IK UI</span>
