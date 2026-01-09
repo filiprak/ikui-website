@@ -10,12 +10,18 @@
                 <template #append>
                     <IkButtonGroup>
                         <IkButton icon="github:brands"
+                                  tag="a"
+                                  href=""
                                   circle
                                   outline />
                         <IkButton icon="facebook-f:brands"
+                                  tag="a"
+                                  href=""
                                   circle
                                   outline />
                         <IkButton icon="npm:brands"
+                                  tag="a"
+                                  href=""
                                   circle
                                   outline />
                     </IkButtonGroup>
