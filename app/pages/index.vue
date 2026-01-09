@@ -18,7 +18,7 @@
                 </div>
                 <!-- Hero Image Placeholder -->
                 <div style="width: 100%; max-width: 1200px;">
-                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-border-radius-md" 
+                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-radius-6" 
                          style="border: 2px dashed var(--border-neutral-regular-default); min-height: 400px; display: flex; align-items: center; justify-content: center;">
                         <div class="ik-text--center">
                             <p class="ik-text--default-light ik-mb-4">[[_Hero Image Placeholder_]]</p>
@@ -39,13 +39,13 @@
                     </p>
                 </IkFlex>
             </div>
-            <IkGrid spacing_x="6" spacing_y="6">
+            <IkGrid spacing_x="8" spacing_y="8">
                 <IkGridItem v-for="feature in features" 
                            :key="feature.title"
                            :xxs="12" 
                            :xs="6" 
                            :md="4">
-                    <div class="ik-pa-6 ik-bg-primary-regular-default ik-border-radius-md" 
+                    <div class="ik-pa-10 ik-bg-primary-regular-default ik-radius-6" 
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
                         <div class="ik-mb-4">
                             <IkIcon :icon="feature.icon" 
@@ -71,10 +71,10 @@
                             By focusing on clarity and ease of use, IK UI enables developers to focus on building 
                             functionality rather than wrestling with styles._]]
                         </p>
-                        <IkFlex column spacing="6" wrap_text>
+                        <IkFlex column spacing="8" wrap_text>
                             <div v-for="principle in principles" 
                                  :key="principle.name"
-                                 class="ik-pa-5 ik-bg-primary-regular-default ik-border-radius-md ik-text-left"
+                                 class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6 ik-text-left"
                                  style="border: 1px solid var(--border-neutral-regular-default);">
                                 <h3 class="ik-text--lg ik-text--semibold ik-mb-2">{{ principle.name }}</h3>
                                 <p class="ik-text--default-light">{{ principle.description }}</p>
@@ -83,7 +83,7 @@
                     </div>
                 </IkGridItem>
                 <IkGridItem :xxs="12" :md="6">
-                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-border-radius-md" 
+                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-radius-6" 
                          style="border: 2px dashed var(--border-neutral-regular-default); min-height: 500px; display: flex; align-items: center; justify-content: center;">
                         <div class="ik-text--center">
                             <p class="ik-text--default-light ik-mb-4">[[_Philosophy Image Placeholder_]]</p>
@@ -105,13 +105,13 @@
                     </p>
                 </IkFlex>
             </div>
-            <IkGrid spacing_x="6" spacing_y="6">
+            <IkGrid spacing_x="8" spacing_y="8">
                 <IkGridItem v-for="component in componentCategories" 
                            :key="component.name"
                            :xxs="12" 
                            :xs="6" 
                            :md="4">
-                    <div class="ik-pa-6 ik-bg-primary-regular-default ik-border-radius-md" 
+                    <div class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6" 
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
                         <div class="ik-mb-4" style="width: 100%; height: 200px; background: var(--bg-neutral-regular-default); border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border-neutral-regular-default);">
                             <div class="ik-text--center">
@@ -128,7 +128,7 @@
 
         <!-- CTA Section -->
         <Section>
-            <div class="ik-pa-10 ik-bg-primary-regular-default ik-border-radius-md" 
+            <div class="ik-pa-10 ik-bg-primary-regular-default ik-radius-6" 
                  style="border: 1px solid var(--border-neutral-regular-default);">
                 <IkFlex column align_center spacing="8" wrap_text>
                     <h2 class="ik-text--display-lg ik-text--center">[[_Ready to Get Started?_]]</h2>
