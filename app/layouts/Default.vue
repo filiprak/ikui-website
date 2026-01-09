@@ -2,7 +2,7 @@
     <IkApp>
         <Nav />
         <div style="position: relative;">
-            <div :class="$style.gradient"/>
+            <div :class="$style.gradient" />
         </div>
         <IkAppContent :class="$style.content">
             <slot />
@@ -36,7 +36,7 @@ useHead({
     left: 0;
     right: 0;
     height: 300px;
-    background: linear-gradient(to bottom, var(--background-primary-strong-default), transparent);
+    background: linear-gradient(to bottom, var(--background-primary-weak-default), transparent);
     opacity: .25;
     pointer-events: none;
     border-top: 2px solid var(--border-primary-light-default);
