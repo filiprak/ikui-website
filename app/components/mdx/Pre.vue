@@ -1,7 +1,8 @@
 <template>
     <div v-show="show"
          :class="['pre', $style.pre]">
-        <div :class="$style.preview">
+        <div v-if="has_preview"
+             :class="$style.preview">
             <Preview />
         </div>
         <div :class="$style.wrapper">
@@ -51,6 +52,7 @@ defineOptions({ inheritAttrs: false });
 
 const slots = useSlots();
 const codeblock = inject(CODEBLOCK, undefined);
+const has_preview = computed(() => !!(slots.default?.() || [])[1]);
 
 function onTabClick(tab: string) {
     if (codeblock) {
