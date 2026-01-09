@@ -136,7 +136,7 @@
                         [[_Start building beautiful interfaces with IK UI today. 
                         Explore our documentation and see how easy it is to integrate our components into your Vue project._]]
                     </p>
-                    <IkFlex justify_center spacing="4" wrap_text>
+                    <IkFlex justify_center spacing="4" wrap_text wrap>
                         <IkButton design="primary"
                                   tag="a"
                                   href="/docs"
