@@ -2,9 +2,9 @@
     <div>
         <!-- Hero Section -->
         <Section>
-            <IkFlex column align_center spacing="10" wrap_text class="ik-text-center ik-py-15">
+            <IkFlex column align_center spacing="10" wrap_text class="ik-text--center ik-py-15">
                 <h1 class="ik-text--display-xl">[[_Build Stunning UI's, Faster._]]</h1>
-                <h2 class="ik-text--lg ik-text--normal ik-text--default-light ik-text-center" style="max-width: 700px;">
+                <h2 class="ik-text--lg ik-text--normal ik-text--default-light ik-text--center" style="max-width: 700px;">
                     [[_A beautiful, minimalistic, lightweight, and easy-to-use UI kit built for Vue developers. 
                     Simplify the process of building modern interfaces while keeping your code and design elegant._]]
                 </h2>
@@ -20,7 +20,7 @@
                 <div style="width: 100%; max-width: 1200px;">
                     <div class="ik-pa-8 ik-bg-neutral-regular-default ik-border-radius-md" 
                          style="border: 2px dashed var(--border-neutral-regular-default); min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                        <div class="ik-text-center">
+                        <div class="ik-text--center">
                             <p class="ik-text--default-light ik-mb-4">[[_Hero Image Placeholder_]]</p>
                             <p class="ik-text--sm ik-text--default-light">[[_Add a hero image showcasing IK UI components in action (e.g., dashboard, landing page, or component showcase)_]]</p>
                         </div>
@@ -33,8 +33,8 @@
         <Section>
             <div class="ik-mb-12">
                 <IkFlex column align_center spacing="4" wrap_text>
-                    <h2 class="ik-text--display-lg ik-text-center">[[_Why Choose IK UI?_]]</h2>
-                    <p class="ik-text--lg ik-text--default-light ik-text-center" style="max-width: 600px;">
+                    <h2 class="ik-text--display-lg ik-text--center">[[_Why Choose IK UI?_]]</h2>
+                    <p class="ik-text--lg ik-text--default-light ik-text--center" style="max-width: 600px;">
                         [[_IK UI focuses on providing components that are designed to simplify your development workflow._]]
                     </p>
                 </IkFlex>
@@ -85,7 +85,7 @@
                 <IkGridItem :xxs="12" :md="6">
                     <div class="ik-pa-8 ik-bg-neutral-regular-default ik-border-radius-md" 
                          style="border: 2px dashed var(--border-neutral-regular-default); min-height: 500px; display: flex; align-items: center; justify-content: center;">
-                        <div class="ik-text-center">
+                        <div class="ik-text--center">
                             <p class="ik-text--default-light ik-mb-4">[[_Philosophy Image Placeholder_]]</p>
                             <p class="ik-text--sm ik-text--default-light">[[_Add an image illustrating the design philosophy (e.g., clean interface examples, minimalist design showcase)_]]</p>
                         </div>
@@ -98,8 +98,8 @@
         <Section>
             <div class="ik-mb-12">
                 <IkFlex column align_center spacing="4" wrap_text>
-                    <h2 class="ik-text--display-lg ik-text-center">[[_Comprehensive Component Library_]]</h2>
-                    <p class="ik-text--lg ik-text--default-light ik-text-center" style="max-width: 600px;">
+                    <h2 class="ik-text--display-lg ik-text--center">[[_Comprehensive Component Library_]]</h2>
+                    <p class="ik-text--lg ik-text--default-light ik-text--center" style="max-width: 600px;">
                         [[_IK UI offers a wide range of components designed for everyday application needs. 
                         All components are intuitive, flexible, and easy to integrate into any Vue project._]]
                     </p>
@@ -114,7 +114,7 @@
                     <div class="ik-pa-6 ik-bg-primary-regular-default ik-border-radius-md" 
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
                         <div class="ik-mb-4" style="width: 100%; height: 200px; background: var(--bg-neutral-regular-default); border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border-neutral-regular-default);">
-                            <div class="ik-text-center">
+                            <div class="ik-text--center">
                                 <p class="ik-text--sm ik-text--default-light">[[_Component Image_]]</p>
                                 <p class="ik-text--xs ik-text--default-light ik-mt-2">{{ component.imageDescription }}</p>
                             </div>
@@ -131,8 +131,8 @@
             <div class="ik-pa-10 ik-bg-primary-regular-default ik-border-radius-md" 
                  style="border: 1px solid var(--border-neutral-regular-default);">
                 <IkFlex column align_center spacing="8" wrap_text>
-                    <h2 class="ik-text--display-lg ik-text-center">[[_Ready to Get Started?_]]</h2>
-                    <p class="ik-text--lg ik-text--default-light ik-text-center" style="max-width: 600px;">
+                    <h2 class="ik-text--display-lg ik-text--center">[[_Ready to Get Started?_]]</h2>
+                    <p class="ik-text--lg ik-text--default-light ik-text--center" style="max-width: 600px;">
                         [[_Start building beautiful interfaces with IK UI today. 
                         Explore our documentation and see how easy it is to integrate our components into your Vue project._]]
                     </p>
@@ -146,7 +146,7 @@
                         <IkButton design="default"
                                   variant="outline"
                                   tag="a"
-                                  href="/docs"
+                                  href="/docs/components"
                                   size="lg">
                             [[_Browse Components_]]
                         </IkButton>
@@ -166,7 +166,7 @@ const features = [
     {
         title: '[[_Minimal & Clean_]]',
         description: '[[_Every component is designed with simplicity and aesthetics in mind, avoiding unnecessary complexity._]]',
-        icon: 'sparkles'
+        icon: 'brush'
     },
     {
         title: '[[_Lightweight_]]',
