@@ -2,7 +2,7 @@
     <nav>
         <NuxtLink v-for="header in headers"
                   :key="header.uid"
-                  no-prefetch
+                  prefetch-on="interaction"
                   :to="`#${header.id}`"
                   custom>
             <template #default="{ href }">
