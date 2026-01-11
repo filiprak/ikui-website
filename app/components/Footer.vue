@@ -11,16 +11,19 @@
                     <IkButtonGroup>
                         <IkButton icon="github:brands"
                                   tag="a"
+                                  target="_blank"
                                   href="https://github.com/filiprak/ikolui.com"
                                   circle
                                   outline />
                         <IkButton icon="facebook-f:brands"
                                   tag="a"
+                                  target="_blank"
                                   href="https://www.facebook.com/profile.php?id=61586101178544"
                                   circle
                                   outline />
                         <IkButton icon="npm:brands"
                                   tag="a"
+                                  target="_blank"
                                   href="https://www.npmjs.com/package/@ikol/ui-kit"
                                   circle
                                   outline />
