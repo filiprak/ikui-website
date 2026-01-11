@@ -166,84 +166,84 @@ const features = [
     {
         title: '[[_Minimal & Clean_]]',
         description: '[[_Every component is designed with simplicity and aesthetics in mind, avoiding unnecessary complexity._]]',
-        icon: 'brush'
+        icon: 'brush',
     },
     {
         title: '[[_Lightweight_]]',
         description: '[[_No heavy dependencies or bloated styles. Only what you need for your application._]]',
-        icon: 'feather'
+        icon: 'feather',
     },
     {
         title: '[[_Vue-Powered_]]',
         description: '[[_Fully written in Vue, leveraging its reactive system for seamless interactivity._]]',
-        icon: 'bolt'
+        icon: 'bolt',
     },
     {
         title: '[[_Customizable_]]',
         description: '[[_Flexible props and slots allow you to adapt components to your needs without overriding core styles._]]',
-        icon: 'sliders'
+        icon: 'sliders',
     },
     {
         title: '[[_Consistent_]]',
         description: '[[_A coherent design language across all components ensures a uniform look and feel._]]',
-        icon: 'layer-group'
+        icon: 'layer-group',
     },
     {
         title: '[[_Accessible_]]',
         description: '[[_Built with accessibility in mind to ensure that applications are usable by everyone._]]',
-        icon: 'universal-access'
-    }
+        icon: 'universal-access',
+    },
 ];
 
 const principles = [
     {
         name: '[[_Beauty_]]',
-        description: '[[_Interfaces should be visually pleasing without relying on flashy effects. Aesthetic simplicity enhances user experience._]]'
+        description: '[[_Interfaces should be visually pleasing without relying on flashy effects. Aesthetic simplicity enhances user experience._]]',
     },
     {
         name: '[[_Minimalism_]]',
-        description: '[[_Less is more. Every element has a purpose. Avoid clutter and unnecessary design noise._]]'
+        description: '[[_Less is more. Every element has a purpose. Avoid clutter and unnecessary design noise._]]',
     },
     {
         name: '[[_Simplicity_]]',
-        description: '[[_Components should be intuitive and easy to implement, even for developers new to Vue._]]'
+        description: '[[_Components should be intuitive and easy to implement, even for developers new to Vue._]]',
     },
     {
         name: '[[_Consistency_]]',
-        description: '[[_Uniform styling and behavior across all components create a predictable and reliable interface for users._]]'
-    }
+        description: '[[_Uniform styling and behavior across all components create a predictable and reliable interface for users._]]',
+    },
 ];
 
 const componentCategories = [
     {
         name: '[[_Buttons_]]',
         description: '[[_Interactive buttons with multiple designs and variants for all your action needs._]]',
-        imageDescription: '[[_Showcase of button variants and designs_]]'
+        imageDescription: '[[_Showcase of button variants and designs_]]',
     },
     {
         name: '[[_Forms & Inputs_]]',
         description: '[[_Comprehensive form components with validation and flexible field options._]]',
-        imageDescription: '[[_Form examples with various input types_]]'
+        imageDescription: '[[_Form examples with various input types_]]',
     },
     {
         name: '[[_Cards & Panels_]]',
         description: '[[_Flexible card components for displaying content in organized, visually appealing layouts._]]',
-        imageDescription: '[[_Card component variations and layouts_]]'
+        imageDescription: '[[_Card component variations and layouts_]]',
     },
     {
         name: '[[_Modals & Toasts_]]',
         description: '[[_Dialog components and notification systems for user feedback and interactions._]]',
-        imageDescription: '[[_Modal and toast notification examples_]]'
+        imageDescription: '[[_Modal and toast notification examples_]]',
     },
     {
         name: '[[_Navigation_]]',
         description: '[[_Navigation elements including menus, breadcrumbs, tabs, and more._]]',
-        imageDescription: '[[_Navigation component showcase_]]'
+        imageDescription: '[[_Navigation component showcase_]]',
     },
     {
         name: '[[_Layout Components_]]',
         description: '[[_Grid, flex, and other layout utilities for building responsive interfaces._]]',
-        imageDescription: '[[_Layout system examples and grid showcases_]]'
-    }
+        imageDescription: '[[_Layout system examples and grid showcases_]]',
+    },
 ];
 </script>

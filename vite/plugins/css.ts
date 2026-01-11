@@ -13,10 +13,10 @@ export function cssLayers() {
 
     const layers = new Map<string, string[] | string>([
         ['base', []],
-        ['vendor', [`node_modules/**/*.css`]],
+        ['vendor', ['node_modules/**/*.css']],
     ]);
     const excluded: string[] = [
-        '**/ui-kit/**'
+        '**/ui-kit/**',
     ];
 
     const declaration: string = `@layer ${[...layers.keys()].join(',')};`;
