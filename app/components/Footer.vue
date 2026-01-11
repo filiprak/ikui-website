@@ -15,6 +15,12 @@
                                   href="https://github.com/filiprak/ikolui.com"
                                   circle
                                   outline />
+                        <IkButton icon="x-twitter:brands"
+                                  tag="a"
+                                  target="_blank"
+                                  href="https://x.com/ui_ik56176"
+                                  circle
+                                  outline />
                         <IkButton icon="facebook-f:brands"
                                   tag="a"
                                   target="_blank"
