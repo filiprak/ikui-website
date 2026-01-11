@@ -37,6 +37,9 @@ export default defineNuxtConfig({
             ],
         },
     },
+    features: {
+        inlineStyles: true,
+    },
     vite: {
         plugins: [
             cssLayers(),
