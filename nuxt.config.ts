@@ -28,6 +28,7 @@ export default defineNuxtConfig({
                 { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
                 { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
                 { rel: 'preconnect', href: 'https://cdnjs.cloudflare.com' },
+                { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap', as: 'style', crossorigin: '' },
                 { rel: 'preload', href: 'https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
                 { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
                 { rel: 'icon', href: '/favicon.svg', sizes: 'image/svg+xml' },
