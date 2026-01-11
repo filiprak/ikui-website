@@ -45,7 +45,7 @@ export function cssLayers() {
         },
 
         transform(code, id) {
-            if (id.endsWith('.css') && !isExcluded(id)) {
+            if (id.endsWith('.css') && code.trim() && !isExcluded(id)) {
                 const layer = getLayer(id);
 
                 if (layer) {
