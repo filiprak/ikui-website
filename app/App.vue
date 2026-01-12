@@ -9,11 +9,12 @@ import './styles/utils.css';
 import './styles/mdx.css';
 import './styles/fa-free-shim.css';
 import { useSSRContext } from '@ikol/ui-kit/composables/globals';
-import { THEME_SYMBOL, createTheme } from '@ikol/ui-kit/composables/theme';
+import { IkThemeType, THEME_SYMBOL, createTheme } from '@ikol/ui-kit/composables/theme';
 import { DEVICE_SYMBOL, createDevice } from '@ikol/ui-kit/composables/device';
 
 const context = useSSRContext();
 const theme = createTheme({
+    type: IkThemeType.DARK,
     settings: {
         fonts: {
             default: {
@@ -69,7 +70,6 @@ useHead(computed(() => {
              let mobile_breakpoint = 992;
              theme = ["light", "dark"].indexOf(theme) < 0 ? "dark" : theme;
              document.documentElement.classList.toggle("ik-theme", true);
-             document.documentElement.classList.toggle("ik-theme--" + theme, true);
              document.documentElement.classList.toggle("ik-theme--" + theme, true);
              meta.name = 'color-scheme';
              meta.content = theme;
