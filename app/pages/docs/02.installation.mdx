@@ -68,15 +68,15 @@ add the following code inside your project's `<head />` tag:
 
 ## Icons
 
-IK UI uses [Font Awesome](https://fontawesome.com/) v6 icons. You can add it to your project, eg.
-add the following code inside your project's `<head />` tag:
+IK UI uses [Font Awesome](https://fontawesome.com/) v7 SVG icons. You can add it to your project using cdn url,
+set the following option to `createIkolUI`:
 
-```html
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-/>
+```js title="app.ts"
+const ui = createIkolUI({
+    config: { ICONS_CDN_URL: 'https://icons.ikui-cdn.workers.dev/fa/7.1.0' },
+});
+
+app.use(ui);
 ```
 
 ## Using library via CDN

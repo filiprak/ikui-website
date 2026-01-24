@@ -95,9 +95,6 @@ When using IK UI via CDN, all components and directives are automatically regist
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" />
-  
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body>
   <div id="app">
@@ -114,7 +111,9 @@ When using IK UI via CDN, all components and directives are automatically regist
       .createApp({
         // Your app logic here
       })
-      .use(IKOL())
+      .use(
+        IKOL({ config: { ICONS_CDN_URL: 'https://icons.ikui-cdn.workers.dev/fa/7.1.0' } })
+      )
       .mount('#app');
   </script>
 </body>
