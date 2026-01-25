@@ -2,10 +2,15 @@
     <div>
         <!-- Hero Section -->
         <Section>
-            <IkFlex column align_center spacing="10" wrap_text class="ik-text--center ik-py-15">
+            <IkFlex column
+                    align_center
+                    spacing="10"
+                    wrap_text
+                    class="ik-text--center ik-py-15">
                 <h1 class="ik-text--display-xl">[[_Build Stunning UI's, Faster._]]</h1>
-                <h2 class="ik-text--lg ik-text--normal ik-text--default-light ik-text--center" style="max-width: 700px;">
-                    [[_A beautiful, minimalistic, lightweight, and easy-to-use UI kit built for Vue developers. 
+                <h2 class="ik-text--lg ik-text--normal ik-text--default-light ik-text--center"
+                    style="max-width: 700px;">
+                    [[_A beautiful, minimalistic, lightweight, and easy-to-use UI kit built for Vue developers.
                     Simplify the process of building modern interfaces while keeping your code and design elegant._]]
                 </h2>
                 <div>
@@ -17,14 +22,9 @@
                     </IkButton>
                 </div>
                 <!-- Hero Image Placeholder -->
-                <div style="width: 100%; max-width: 1200px;">
-                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-radius-6" 
-                         style="border: 2px dashed var(--border-neutral-regular-default); min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                        <div class="ik-text--center">
-                            <p class="ik-text--default-light ik-mb-4">[[_Hero Image Placeholder_]]</p>
-                            <p class="ik-text--sm ik-text--default-light">[[_Add a hero image showcasing IK UI components in action (e.g., dashboard, landing page, or component showcase)_]]</p>
-                        </div>
-                    </div>
+                <div class="hero-img-wrapper ik-radius-7"
+                     style="width: 100%; max-width: 1200px;">
+                    <div class="hero-img"></div>
                 </div>
             </IkFlex>
         </Section>
@@ -32,25 +32,31 @@
         <!-- Features Section -->
         <Section>
             <div class="ik-mb-12">
-                <IkFlex column align_center spacing="4" wrap_text>
+                <IkFlex column
+                        align_center
+                        spacing="4"
+                        wrap_text>
                     <h2 class="ik-text--display-lg ik-text--center">[[_Why Choose IK UI?_]]</h2>
-                    <p class="ik-text--lg ik-text--default-light ik-text--center" style="max-width: 600px;">
-                        [[_IK UI focuses on providing components that are designed to simplify your development workflow._]]
+                    <p class="ik-text--lg ik-text--default-light ik-text--center"
+                       style="max-width: 600px;">
+                        [[_IK UI focuses on providing components that are designed to simplify your development
+                        workflow._]]
                     </p>
                 </IkFlex>
             </div>
-            <IkGrid spacing_x="8" spacing_y="8">
-                <IkGridItem v-for="feature in features" 
-                           :key="feature.title"
-                           :xxs="12" 
-                           :xs="6" 
-                           :md="4">
-                    <div class="ik-pa-10 ik-bg-primary-regular-default ik-radius-6" 
+            <IkGrid spacing_x="8"
+                    spacing_y="8">
+                <IkGridItem v-for="feature in features"
+                            :key="feature.title"
+                            :xxs="12"
+                            :xs="6"
+                            :md="4">
+                    <div class="ik-pa-10 ik-bg-primary-regular-default ik-radius-6"
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
                         <div class="ik-mb-4">
-                            <IkIcon :icon="feature.icon" 
-                                    circle 
-                                    size_px="48" 
+                            <IkIcon :icon="feature.icon"
+                                    circle
+                                    size_px="48"
                                     design="primary" />
                         </div>
                         <h3 class="ik-text--lg ik-text--semibold ik-mb-3 ik-text-left">{{ feature.title }}</h3>
@@ -62,17 +68,22 @@
 
         <!-- Philosophy Section -->
         <Section>
-            <IkGrid spacing_x="8" spacing_y="8" class="ik-align-items-center">
-                <IkGridItem :xxs="12" :md="6">
+            <IkGrid spacing_x="8"
+                    spacing_y="8"
+                    class="ik-align-items-center">
+                <IkGridItem :xxs="12"
+                            :md="6">
                     <div class="ik-text-left">
                         <h2 class="ik-text--display-lg ik-mb-4">[[_Built on Core Principles_]]</h2>
                         <p class="ik-text--lg ik-text--default-light ik-mb-8">
-                            [[_IK UI is guided by four core principles that are reflected in every component. 
-                            By focusing on clarity and ease of use, IK UI enables developers to focus on building 
+                            [[_IK UI is guided by four core principles that are reflected in every component.
+                            By focusing on clarity and ease of use, IK UI enables developers to focus on building
                             functionality rather than wrestling with styles._]]
                         </p>
-                        <IkFlex column spacing="8" wrap_text>
-                            <div v-for="principle in principles" 
+                        <IkFlex column
+                                spacing="8"
+                                wrap_text>
+                            <div v-for="principle in principles"
                                  :key="principle.name"
                                  class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6 ik-text-left"
                                  style="border: 1px solid var(--border-neutral-regular-default);">
@@ -82,12 +93,14 @@
                         </IkFlex>
                     </div>
                 </IkGridItem>
-                <IkGridItem :xxs="12" :md="6">
-                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-radius-6" 
+                <IkGridItem :xxs="12"
+                            :md="6">
+                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-radius-6"
                          style="border: 2px dashed var(--border-neutral-regular-default); min-height: 500px; display: flex; align-items: center; justify-content: center;">
                         <div class="ik-text--center">
                             <p class="ik-text--default-light ik-mb-4">[[_Philosophy Image Placeholder_]]</p>
-                            <p class="ik-text--sm ik-text--default-light">[[_Add an image illustrating the design philosophy (e.g., clean interface examples, minimalist design showcase)_]]</p>
+                            <p class="ik-text--sm ik-text--default-light">[[_Add an image illustrating the design
+                                philosophy (e.g., clean interface examples, minimalist design showcase)_]]</p>
                         </div>
                     </div>
                 </IkGridItem>
@@ -97,26 +110,33 @@
         <!-- Components Showcase Section -->
         <Section>
             <div class="ik-mb-12">
-                <IkFlex column align_center spacing="4" wrap_text>
+                <IkFlex column
+                        align_center
+                        spacing="4"
+                        wrap_text>
                     <h2 class="ik-text--display-lg ik-text--center">[[_Comprehensive Component Library_]]</h2>
-                    <p class="ik-text--lg ik-text--default-light ik-text--center" style="max-width: 600px;">
-                        [[_IK UI offers a wide range of components designed for everyday application needs. 
+                    <p class="ik-text--lg ik-text--default-light ik-text--center"
+                       style="max-width: 600px;">
+                        [[_IK UI offers a wide range of components designed for everyday application needs.
                         All components are intuitive, flexible, and easy to integrate into any Vue project._]]
                     </p>
                 </IkFlex>
             </div>
-            <IkGrid spacing_x="8" spacing_y="8">
-                <IkGridItem v-for="component in componentCategories" 
-                           :key="component.name"
-                           :xxs="12" 
-                           :xs="6" 
-                           :md="4">
-                    <div class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6" 
+            <IkGrid spacing_x="8"
+                    spacing_y="8">
+                <IkGridItem v-for="component in componentCategories"
+                            :key="component.name"
+                            :xxs="12"
+                            :xs="6"
+                            :md="4">
+                    <div class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6"
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
-                        <div class="ik-mb-4" style="width: 100%; height: 200px; background: var(--bg-neutral-regular-default); border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border-neutral-regular-default);">
+                        <div class="ik-mb-4"
+                             style="width: 100%; height: 200px; background: var(--bg-neutral-regular-default); border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border-neutral-regular-default);">
                             <div class="ik-text--center">
                                 <p class="ik-text--sm ik-text--default-light">[[_Component Image_]]</p>
-                                <p class="ik-text--xs ik-text--default-light ik-mt-2">{{ component.imageDescription }}</p>
+                                <p class="ik-text--xs ik-text--default-light ik-mt-2">{{ component.imageDescription }}
+                                </p>
                             </div>
                         </div>
                         <h3 class="ik-text--lg ik-text--semibold ik-mb-2 ik-text-left">{{ component.name }}</h3>
@@ -128,15 +148,23 @@
 
         <!-- CTA Section -->
         <Section>
-            <div class="ik-pa-10 ik-bg-primary-regular-default ik-radius-6" 
+            <div class="ik-pa-10 ik-bg-primary-regular-default ik-radius-6"
                  style="border: 1px solid var(--border-neutral-regular-default);">
-                <IkFlex column align_center spacing="8" wrap_text>
+                <IkFlex column
+                        align_center
+                        spacing="8"
+                        wrap_text>
                     <h2 class="ik-text--display-lg ik-text--center">[[_Ready to Get Started?_]]</h2>
-                    <p class="ik-text--lg ik-text--default-light ik-text--center" style="max-width: 600px;">
-                        [[_Start building beautiful interfaces with IK UI today. 
-                        Explore our documentation and see how easy it is to integrate our components into your Vue project._]]
+                    <p class="ik-text--lg ik-text--default-light ik-text--center"
+                       style="max-width: 600px;">
+                        [[_Start building beautiful interfaces with IK UI today.
+                        Explore our documentation and see how easy it is to integrate our components into your Vue
+                        project._]]
                     </p>
-                    <IkFlex justify_center spacing="4" wrap_text wrap>
+                    <IkFlex justify_center
+                            spacing="4"
+                            wrap_text
+                            wrap>
                         <IkButton design="primary"
                                   tag="a"
                                   href="/docs"
@@ -161,6 +189,7 @@ import { IkButton } from '@ikol/ui-kit/components/IkButton';
 import { IkFlex } from '@ikol/ui-kit/components/IkFlex';
 import { IkGrid, IkGridItem } from '@ikol/ui-kit/components/IkGrid';
 import { IkIcon } from '@ikol/ui-kit/components/IkIcon';
+import { IkImage } from '@ikol/ui-kit/components/IkImage';
 
 const features = [
     {
@@ -247,3 +276,26 @@ const componentCategories = [
     },
 ];
 </script>
+<style lang="css" scoped>
+.hero-img-wrapper {
+    box-shadow: 0 -20px 30px 0 var(--alpha-black-10);
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 10 / 7;
+    background: url('/assets/hero-dark.webp') no-repeat top/cover;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+
+.ik-theme--light .hero-img {
+    background: url('/assets/hero-light.webp') no-repeat top/cover;
+}
+</style>
