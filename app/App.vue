@@ -69,7 +69,8 @@ useHead(computed(() => {
              let mobile_breakpoint = 992;
              theme = ["light", "dark"].indexOf(theme) < 0 ? "dark" : theme;
              document.documentElement.classList.toggle("ik-theme", true);
-             document.documentElement.classList.toggle("ik-theme--" + theme, true);
+             document.documentElement.classList.toggle("ik-theme--dark", theme == "dark");
+             document.documentElement.classList.toggle("ik-theme--light", theme == "light");
              meta.name = 'color-scheme';
              meta.content = theme;
              document.head.appendChild(meta);
