@@ -126,13 +126,11 @@
                             :md="4">
                     <div class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6"
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
-                        <div class="ik-mb-4"
-                             style="width: 100%; height: 200px; background: var(--bg-neutral-regular-default); border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border-neutral-regular-default);">
-                            <div class="ik-text--center">
-                                <p class="ik-text--sm ik-text--default-light">[[_Component Image_]]</p>
-                                <p class="ik-text--xs ik-text--default-light ik-mt-2">{{ component.imageDescription }}
-                                </p>
-                            </div>
+                        <div class="intro-preview ik-mb-8">
+                            <IkImage src="/assets/shop-light.webp"
+                                     class="ik-width--full ik-height--full ik-radius-4"
+                                     cover>
+                            </IkImage>
                         </div>
                         <h3 class="ik-text--lg ik-text--semibold ik-mb-2 ik-text-left">{{ component.name }}</h3>
                         <p class="ik-text--sm ik-text--default-light ik-text-left">{{ component.description }}</p>
@@ -185,6 +183,7 @@ import { IkFlex } from '@ikol/ui-kit/components/IkFlex';
 import { IkGrid, IkGridItem } from '@ikol/ui-kit/components/IkGrid';
 import { IkIcon } from '@ikol/ui-kit/components/IkIcon';
 import { IkImage } from '@ikol/ui-kit/components/IkImage';
+import { IkInput } from '@ikol/ui-kit/components/IkInput';
 
 const features = [
     {
@@ -310,5 +309,10 @@ const componentCategories = [
 
 .ik-theme--light .philosophy-img {
     background: url('/assets/shop-light.webp') no-repeat top/cover;
+}
+
+.intro-preview {
+    width: 100%;
+    aspect-ratio: 16 / 7;
 }
 </style>
