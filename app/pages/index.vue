@@ -127,10 +127,7 @@
                     <div class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6"
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
                         <div class="intro-preview ik-mb-8">
-                            <IkImage src="/assets/shop-light.webp"
-                                     class="ik-width--full ik-height--full ik-radius-4"
-                                     cover>
-                            </IkImage>
+                            <component :is="component.img"></component>
                         </div>
                         <h3 class="ik-text--lg ik-text--semibold ik-mb-2 ik-text-left">{{ component.name }}</h3>
                         <p class="ik-text--sm ik-text--default-light ik-text-left">{{ component.description }}</p>
@@ -184,6 +181,12 @@ import { IkGrid, IkGridItem } from '@ikol/ui-kit/components/IkGrid';
 import { IkIcon } from '@ikol/ui-kit/components/IkIcon';
 import { IkImage } from '@ikol/ui-kit/components/IkImage';
 import { IkInput } from '@ikol/ui-kit/components/IkInput';
+import Buttons from '../components/intros/Buttons.vue';
+import Forms from '../components/intros/Forms.vue';
+import Modals from '../components/intros/Modals.vue';
+import Navigation from '../components/intros/Navigation.vue';
+import Grids from '../components/intros/Grids.vue';
+import Dates from '../components/intros/Dates.vue';
 
 const features = [
     {
@@ -242,31 +245,37 @@ const componentCategories = [
         name: '[[_Buttons_]]',
         description: '[[_Interactive buttons with multiple designs and variants for all your action needs._]]',
         imageDescription: '[[_Showcase of button variants and designs_]]',
+        img: Buttons,
     },
     {
         name: '[[_Forms & Inputs_]]',
         description: '[[_Comprehensive form components with validation and flexible field options._]]',
         imageDescription: '[[_Form examples with various input types_]]',
+        img: Forms,
     },
     {
-        name: '[[_Cards & Panels_]]',
-        description: '[[_Flexible card components for displaying content in organized, visually appealing layouts._]]',
-        imageDescription: '[[_Card component variations and layouts_]]',
+        name: '[[_Date & Calendars_]]',
+        description: '[[_Interactive date and calendar components for selecting and displaying dates in a clean, user-friendly interface._]]',
+        imageDescription: '[[_Calendar views, date pickers, and scheduling layouts_]]',
+        img: Dates,
     },
     {
         name: '[[_Modals & Toasts_]]',
         description: '[[_Dialog components and notification systems for user feedback and interactions._]]',
         imageDescription: '[[_Modal and toast notification examples_]]',
+        img: Modals,
     },
     {
         name: '[[_Navigation_]]',
         description: '[[_Navigation elements including menus, breadcrumbs, tabs, and more._]]',
         imageDescription: '[[_Navigation component showcase_]]',
+        img: Navigation,
     },
     {
         name: '[[_Layout Components_]]',
         description: '[[_Grid, flex, and other layout utilities for building responsive interfaces._]]',
         imageDescription: '[[_Layout system examples and grid showcases_]]',
+        img: Grids,
     },
 ];
 </script>
@@ -313,6 +322,8 @@ const componentCategories = [
 
 .intro-preview {
     width: 100%;
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 5 / 3;
+    border-radius: var(--radius-4);
+    overflow: hidden;
 }
 </style>
