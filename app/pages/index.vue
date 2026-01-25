@@ -7,7 +7,7 @@
                     spacing="10"
                     wrap_text
                     class="ik-text--center ik-py-15">
-                <h1 class="ik-text--display-xl">[[_Build Stunning UI's, Faster._]]</h1>
+                <h1 class="ik-text--display-xl">[[_Build Lightweight UI's, Faster._]]</h1>
                 <h2 class="ik-text--lg ik-text--normal ik-text--default-light ik-text--center"
                     style="max-width: 700px;">
                     [[_A beautiful, minimalistic, lightweight, and easy-to-use UI kit built for Vue developers.

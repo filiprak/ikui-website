@@ -24,7 +24,6 @@
                 <ThemeSwitch />
                 <IkButtonGroup class="hide-mobile">
                     <IkButton filled
-                              round
                               tag="a"
                               href="/docs"
                               design="primary">
