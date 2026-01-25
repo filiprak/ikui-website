@@ -95,13 +95,8 @@
                 </IkGridItem>
                 <IkGridItem :xxs="12"
                             :md="6">
-                    <div class="ik-pa-8 ik-bg-neutral-regular-default ik-radius-6"
-                         style="border: 2px dashed var(--border-neutral-regular-default); min-height: 500px; display: flex; align-items: center; justify-content: center;">
-                        <div class="ik-text--center">
-                            <p class="ik-text--default-light ik-mb-4">[[_Philosophy Image Placeholder_]]</p>
-                            <p class="ik-text--sm ik-text--default-light">[[_Add an image illustrating the design
-                                philosophy (e.g., clean interface examples, minimalist design showcase)_]]</p>
-                        </div>
+                    <div class="philosophy-img ik-radius-6">
+
                     </div>
                 </IkGridItem>
             </IkGrid>
@@ -297,5 +292,23 @@ const componentCategories = [
 
 .ik-theme--light .hero-img {
     background: url('/assets/hero-light.webp') no-repeat top/cover;
+}
+
+.philosophy-img {
+    background: url('/assets/shop-dark.webp') no-repeat top/cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 7 / 6;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    border: 3px solid var(--border-neutral-light-default);
+}
+
+.ik-theme--light .philosophy-img {
+    background: url('/assets/shop-light.webp') no-repeat top/cover;
 }
 </style>
