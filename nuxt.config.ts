@@ -56,6 +56,8 @@ export default defineNuxtConfig({
         ],
         define: {
             __LIB_PACKAGE__: JSON.stringify(getPackageJson()),
+            __PLAYGROUND_URL__: JSON.stringify('https://codesandbox.io/p/devbox/6kkdh8'),
+            __OG_URL__: JSON.stringify('https://og-image.ikui.dev'),
         },
     },
     devtools: false,

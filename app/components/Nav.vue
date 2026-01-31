@@ -16,6 +16,7 @@
                  class="hide-mobile">
                 <NuxtLink v-for="item in items"
                           :key="item.path"
+                          :target="item.target"
                           :to="item.path">
                     {{ item.label }}
                 </NuxtLink>
@@ -46,6 +47,7 @@
                             <NuxtLink v-for="item in items"
                                       :key="item.path"
                                       :to="item.path"
+                                      :target="item.target"
                                       @click="burger_open = false">
                                 {{ item.label }}
                             </NuxtLink>
@@ -72,10 +74,15 @@ import { IkImage } from '@ikol/ui-kit/components/IkImage';
 import { IkListItem } from '@ikol/ui-kit/components/IkList';
 import { useBodyScroll } from '@ikol/ui-kit/composables/body_scroll';
 
-const items = [
-    { path: '/', label: '[[_Home_]]' },
-    { path: '/docs', label: '[[_Documentation_]]' },
-];
+const items: {
+    path: string,
+    label: string,
+    target?: string,
+}[] = [
+        { path: '/', label: '[[_Home_]]' },
+        { path: '/docs', label: '[[_Docs_]]' },
+        { path: __PLAYGROUND_URL__, label: '[[_Playground_]]', target: '_blank' },
+    ];
 
 const burger_open = ref(false);
 const scroll = useBodyScroll();

@@ -3,5 +3,5 @@ export function getOgImage(title?: string, desc?: string) {
         title: (title || ''),
         desc: (desc || ''),
     };
-    return 'https://og-image.ikui.dev?' + (new URLSearchParams(query).toString());
+    return __OG_URL__ + '?' + (new URLSearchParams(query).toString());
 }
