@@ -7,14 +7,18 @@
                     spacing="10"
                     wrap_text
                     class="ik-text--center ik-py-15">
-                <h1 class="ik-text--display-xl">[[_Build Lightweight UI's, Faster._]]</h1>
-                <h2 class="ik-text--lg ik-text--normal ik-text--default-light ik-text--center"
-                    style="max-width: 700px;">
-                    [[_A beautiful, minimalistic, lightweight, and easy-to-use UI kit built for Vue developers.
-                    Simplify the process of building modern interfaces while keeping your code and design elegant._]]
-                </h2>
+                <h1 class="ik-text--display-xl">Build <span class="mark">Lightweight</span> UI's, Faster.</h1>
+                <MetaDescription>
+                    <h2 class="ik-text--lg ik-text--normal ik-text--default-light ik-text--center"
+                        style="max-width: 700px;">
+                        A beautiful, minimalistic, lightweight, and easy-to-use Vue.js UI kit.
+                        <br>Simplify the process of building modern interfaces while keeping your code and design
+                        elegant.
+                    </h2>
+                </MetaDescription>
                 <div>
                     <IkButton design="primary"
+                              class="hero-btn"
                               tag="a"
                               href="/docs"
                               size="lg">
@@ -51,9 +55,9 @@
                             :xxs="12"
                             :xs="6"
                             :md="4">
-                    <div class="ik-pa-10 ik-bg-primary-regular-default ik-radius-6"
+                    <div class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6"
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
-                        <div class="ik-mb-4">
+                        <div class="ik-mb-7">
                             <IkIcon :icon="feature.icon"
                                     circle
                                     size_px="48"
@@ -179,14 +183,13 @@ import { IkButton } from '@ikol/ui-kit/components/IkButton';
 import { IkFlex } from '@ikol/ui-kit/components/IkFlex';
 import { IkGrid, IkGridItem } from '@ikol/ui-kit/components/IkGrid';
 import { IkIcon } from '@ikol/ui-kit/components/IkIcon';
-import { IkImage } from '@ikol/ui-kit/components/IkImage';
-import { IkInput } from '@ikol/ui-kit/components/IkInput';
 import Buttons from '../components/intros/Buttons.vue';
 import Forms from '../components/intros/Forms.vue';
 import Modals from '../components/intros/Modals.vue';
 import Navigation from '../components/intros/Navigation.vue';
 import Grids from '../components/intros/Grids.vue';
 import Dates from '../components/intros/Dates.vue';
+import MetaDescription from '../components/utils/MetaDescription.vue';
 
 const features = [
     {
@@ -325,5 +328,18 @@ const componentCategories = [
     aspect-ratio: 5 / 3;
     border-radius: var(--radius-4);
     overflow: hidden;
+}
+
+.intro-preview > * {
+    width: 100%;
+    height: 100%;
+}
+
+.mark {
+    color: #5f77ff;
+}
+
+.hero-btn {
+    box-shadow: 0 10px 30px 0 #3049d65b;
 }
 </style>
