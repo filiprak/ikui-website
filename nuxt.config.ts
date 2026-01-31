@@ -6,6 +6,10 @@ import { getPackageJson } from './app/utils/getPackageJson';
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-09-02',
+    site: {
+        url: 'https://ikui.dev',
+        name: 'IK UI',
+    },
     build: {
         transpile: ['@ikol/ui-kit'],
     },
@@ -17,6 +21,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/device',
         '@nuxt/eslint',
+        '@nuxtjs/sitemap',
+        '@nuxtjs/robots',
     ],
     app: {
         head: {

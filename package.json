@@ -23,6 +23,8 @@
   "dependencies": {
     "@ikol/ui-kit": "1.4.0",
     "@nuxtjs/device": "^3.2.4",
+    "@nuxtjs/robots": "^5.7.0",
+    "@nuxtjs/sitemap": "^7.6.0",
     "anchorme": "^3.0.8",
     "dayjs": "1.11.13",
     "lodash-es": "^4.17.21",
