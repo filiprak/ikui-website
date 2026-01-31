@@ -28,7 +28,7 @@
                 <!-- Hero Image Placeholder -->
                 <div class="hero-img-wrapper ik-radius-7"
                      style="width: 100%; max-width: 1200px;">
-                    <div class="hero-img"></div>
+                    <div class="hero-img"/>
                 </div>
             </IkFlex>
         </Section>
@@ -99,9 +99,7 @@
                 </IkGridItem>
                 <IkGridItem :xxs="12"
                             :md="6">
-                    <div class="philosophy-img ik-radius-6">
-
-                    </div>
+                    <div class="philosophy-img ik-radius-6"/>
                 </IkGridItem>
             </IkGrid>
         </Section>
@@ -131,7 +129,7 @@
                     <div class="ik-pa-8 ik-bg-primary-regular-default ik-radius-6"
                          style="height: 100%; border: 1px solid var(--border-neutral-regular-default);">
                         <div class="intro-preview ik-mb-8">
-                            <component :is="component.img"></component>
+                            <component :is="component.img"/>
                         </div>
                         <h3 class="ik-text--lg ik-text--semibold ik-mb-2 ik-text-left">{{ component.name }}</h3>
                         <p class="ik-text--sm ik-text--default-light ik-text-left">{{ component.description }}</p>

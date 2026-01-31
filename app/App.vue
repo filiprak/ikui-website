@@ -77,6 +77,22 @@ useHead(computed(() => {
              const updateMobile = () => document.documentElement.classList.toggle("mobile", window.innerWidth <= mobile_breakpoint);
              window.addEventListener("resize", updateMobile);
              updateMobile();`,
+            {
+                type: 'application/ld+json',
+                innerHTML: JSON.stringify({
+                    '@context': 'https://schema.org',
+                    '@type': 'SoftwareApplication',
+                    'name': 'IK UI',
+                    'operatingSystem': 'Web',
+                    'applicationCategory': 'DeveloperApplication',
+                    'softwareVersion': __LIB_PACKAGE__.version,
+                    'offers': {
+                        '@type': 'Offer',
+                        'price': '0',
+                        'priceCurrency': 'USD',
+                    },
+                }),
+            },
         ],
     };
 }));

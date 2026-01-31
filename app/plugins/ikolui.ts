@@ -1,6 +1,4 @@
-import { createIkolUI } from '@ikol/ui-kit';
 import { provideConfig, provideGlobal, SSR_CONTEXT_INJECTION_KEY } from '@ikol/ui-kit/composables/globals';
-import { IkThemeType } from '@ikol/ui-kit/composables/theme';
 
 export default defineNuxtPlugin((app) => {
     const { isMobile, isTablet } = useDevice();

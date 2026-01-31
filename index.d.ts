@@ -1,7 +1,7 @@
 import '#vue-router';
 
 declare global {
-    const __LIB_PACKAGE__: unknown;
+    const __LIB_PACKAGE__: { version: string };
     const __PLAYGROUND_URL__: string;
     const __OG_URL__: string;
 }
