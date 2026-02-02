@@ -8,7 +8,7 @@ export default defineNuxtPlugin((app) => {
         SSR: import.meta.server,
         SSR_DEVICE: device,
         LOCAL_STORAGE_HASH: 'pub',
-        ICONS_CDN_URL: 'https://icons.ikui-cdn.workers.dev/fa/7.1.0',
+        ICONS_CDN_URL: 'https://icons.ikui.dev/fa/7.1.0',
     });
 
     provideGlobal(SSR_CONTEXT_INJECTION_KEY, {
